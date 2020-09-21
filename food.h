@@ -1,5 +1,7 @@
 #ifndef FOOD_H
 #define FOOD_H
+
+
 #include<QPainter>
 #include<QImage>
 class Food
@@ -14,5 +16,4 @@ public:
     int food_index;
     QString food_image;
 };
-
 #endif // FOOD_H

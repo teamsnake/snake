@@ -1,18 +1,19 @@
 #ifndef SNAKE_H
 #define SNAKE_H
-#include"mainwindow.h"
-#include<QObject>
+
+#include <QObject>
 #include<QRect>
 #include<QColor>
 #include<QPainter>
 #include<QDebug>
-
+#include"data.h"
 enum orientation{Sright,Sleft,Sup,Sdown};
-class Snake:public QObject
+class Snake : public QObject
 {
     Q_OBJECT
-
 public:
+    explicit Snake(QObject *parent = nullptr);
+
     Snake(QColor color)
     {
         this->m_color=color;
@@ -29,4 +30,5 @@ public:
         return *this;
     }
 };
+
 #endif // SNAKE_H

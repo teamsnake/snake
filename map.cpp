@@ -4,7 +4,6 @@ Map::Map()
 {
 
 }
-
 void Map::Display(QPainter &painter,int wid,int hei)
 {
     painter.setPen(QPen(Qt::white,WALL_WIDTH,Qt::SolidLine));
